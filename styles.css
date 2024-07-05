@@ -31,6 +31,7 @@ header
     background-color: #1f2235;
     position: fixed;
     width: 100vw;
+    z-index: 1800;
 }
 
 header h1
@@ -279,7 +280,7 @@ button a
     height: 550px;
     background-color: #1f2235;
 }
-.skill
+.skill1
 {
     display: flex;
 }
@@ -306,34 +307,59 @@ button a
 {
     background-color: #FF4A57;
 }
-.jauge
+.skill2
 {
-    margin: 80px 0 0 120px;
+    width: 100%;
+    max-width: 600px;
+    padding-left: 90px;
+    margin-top: 100px;
 }
-.jauge p
+.skill
+{
+    padding-bottom: 25px;
+}
+.skill-name
 {
     font-size: 18px;
-    margin: 30px 0 10px 0;
+    color: white;
+    margin: 10px 0;
 }
-.nodejs
+.skill-bar
 {
-    border-bottom: 5px solid #FF4A57;
-    width: 500px;
+    height: 7px;
+    background: #24263b;
 }
-.python
+.skill-per
 {
-    border-bottom: 5px solid #FF4A57;
-    width: 450px;
+    height: 7px;
+    background: #FF4A57;
+    position: relative;
 }
-.laravel
+.skill-per::before
 {
-    border-bottom: 5px solid #FF4A57;
-    width: 400px;
+    content: attr(per);
+    font-weight: bold;
+    position: absolute;
+    padding: 4px 6px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: -35px;
+    right: 0;
+    transform: translateX(50%);
 }
-.seo
+.skill-per::after
 {
-    border-bottom: 5px solid #FF4A57;
-    width: 550px;
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    top: -15px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
 }
 
 /* RESUME */
