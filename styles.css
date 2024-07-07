@@ -88,13 +88,34 @@ header nav ul li a:hover
 {
     display: inline-block;
     margin-top: 73px;
-    padding-right: 50px;
+    padding-right: 30px;
+}
+.list-item ul li a
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FF4A57;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    margin-left: 8px;
 }
 
 .list-item ul li img
 {
-    width: 25px;
-    
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto auto auto;
+}
+.list-item ul li a:hover
+{
+    background-color: #FF4A57;
 }
 
 .description
@@ -653,9 +674,43 @@ footer p{
     display: inline-block;
     margin: 75px 35px 0 0;
 }
+.list-item3 ul li a
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1f2235;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    margin-left: 8px;
+}
+
+.list-item3 ul li img
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto auto auto;
+}
+.list-item3 ul li a:hover
+{
+    background-color: #FF4A57;
+}
 .list-item3 p
 {
     padding-top: 50px;
+}
+.list-item3 p a
+{
+    text-decoration: none;
+}
+.list-item3 p a .red:hover{
+    color: white;
 }
 .red
 {
